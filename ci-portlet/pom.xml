@@ -6,7 +6,7 @@
 	<artifactId>ci-portlet</artifactId>
 	<packaging>war</packaging>
 	<name>ci-portlet Portlet</name>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>0.00.06</version>
 	<build>
 		<plugins>
 			<plugin>
