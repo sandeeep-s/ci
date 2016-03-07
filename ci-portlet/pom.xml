@@ -46,8 +46,46 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+ 	        <plugin>
+ 	  		<groupId>org.codehaus.mojo</groupId>
+	            <artifactId>versions-maven-plugin</artifactId>
+	            <version>2.1</version>
+	            <configuration>
+	                <includesList>com.example.plugins</includesList>
+	                <generateBackupPoms>false</generateBackupPoms>
+	                <allowSnapshots>true</allowSnapshots>
+	            </configuration>
+	        </plugin>
 		</plugins>
+		
 	</build>
+
+ 
+	<properties>
+		<scm.url>scm:git:https://github.com/urssandy84/ci.git</scm.url>
+	</properties>
+	
+	<scm>
+		<url>${scm.url}</url>
+		<connection>${scm.url}</connection>
+		<developerConnection>${scm.url}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+<profiles>
+	<profile>
+	<id>local</id>
+	<properties>
+		<liferay.version>6.2.1</liferay.version>
+		<liferay.maven.plugin.version>6.2.1</liferay.maven.plugin.version>
+		<liferay.auto.deploy.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/deploy</liferay.auto.deploy.dir>
+		<liferay.app.server.deploy.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps</liferay.app.server.deploy.dir>
+		<liferay.app.server.lib.global.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext</liferay.app.server.lib.global.dir>
+		<liferay.app.server.portal.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT</liferay.app.server.portal.dir>
+	</properties>
+	</profile>
+
+</profiles>
 	
 	<repositories>
 	    <repository>
