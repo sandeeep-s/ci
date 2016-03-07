@@ -56,8 +56,6 @@
 	</properties>
 	
 	<scm>
-		<url>${scm.url}</url>
-		<connection>${scm.url}</connection>
 		<developerConnection>${scm.url}</developerConnection>
 	</scm>
 
