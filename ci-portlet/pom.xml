@@ -48,6 +48,38 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<repositories>
+	    <repository>
+	        <id>liferay-ce</id>
+	        <name>Liferay CE</name>
+	        <url>https://repository.liferay.com/nexus/content/groups/liferay-ce</url>
+	        <releases><enabled>true</enabled></releases>
+	        <snapshots><enabled>true</enabled></snapshots>
+	    </repository>
+	</repositories>
+	
+	<pluginRepositories>
+	    <pluginRepository>
+	        <id>liferay-ce</id>
+	        <url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+	        <releases><enabled>true</enabled></releases>
+	        <snapshots><enabled>true</enabled></snapshots>
+	    </pluginRepository>
+	</pluginRepositories>
+	
+	<distributionManagement>
+	    <repository>
+	        <id>liferay-releases</id>
+	        <url>http://localhost:8081/nexus/content/repositories/liferay-releases</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>liferay-snapshots</id>
+	        <name>Liferay Snapshots Repository</name>
+	        <url>http://localhost:8081/nexus/content/repositories/liferay-snapshots</url>
+	    </snapshotRepository>
+	</distributionManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
