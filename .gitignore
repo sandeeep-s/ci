@@ -1,1 +1,14 @@
 liferay-portal-6.2-ce-ga2/
+*.zip
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/

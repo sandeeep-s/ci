@@ -12,6 +12,5 @@ COPY liferay-portal-tomcat-6.2-ce-ga6-20160112152609836.zip ${LIFERAY_PARENT_DIR
 RUN unzip ${LIFERAY_PARENT_DIR}/liferay-portal-tomcat-6.2-ce-ga6-20160112152609836.zip -d ${LIFERAY_PARENT_DIR} \
 	&& rm ${LIFERAY_PARENT_DIR}/liferay-portal-tomcat-6.2-ce-ga6-20160112152609836.zip
 	
-EXPOSE 8080
-
-CMD ${LIFERAY_PARENT_DIR}/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/bin/startup.sh && tail -f ${LIFERAY_PARENT_DIR}/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/logs/catalina.out
+CMD echo "Liferay Ready"
+	
