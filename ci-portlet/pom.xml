@@ -7,6 +7,7 @@
 	<packaging>war</packaging>
 	<name>ci-portlet Portlet</name>
 	<version>2.0.0-SNAPSHOT</version>
+	
 	<build>
 		<plugins>
 			<plugin>
