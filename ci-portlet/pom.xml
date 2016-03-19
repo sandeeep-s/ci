@@ -99,12 +99,12 @@
 	<distributionManagement>
 	    <repository>
 	        <id>liferay-releases</id>
-	        <url>http://192.168.99.100:8081/content/repositories/liferay-releases</url>
+	        <url>http://192.168.99.100:8081/content/repositories/releases</url>
 	    </repository>
 	    <snapshotRepository>
 	        <id>liferay-snapshots</id>
 	        <name>Liferay Snapshots Repository</name>
-	        <url>http://192.168.99.100:8081/content/repositories/liferay-snapshots</url>
+	        <url>http://192.168.99.100:8081/content/repositories/snapshots</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
