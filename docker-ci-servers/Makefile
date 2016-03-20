@@ -2,7 +2,7 @@
 gitlab:
 	docker run --detach \
     --hostname gitlab.example.com \
-    --publish 443:443 --publish 80:80 --publish 22:22 \
+    --publish 443:443 --publish 8082:80 --publish 2222:22 \
     --name gitlab \
     --restart always \
     --volume /srv/gitlab/config:/etc/gitlab \
