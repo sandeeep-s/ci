@@ -7,6 +7,12 @@
 	<packaging>war</packaging>
 	<name>ci-portlet Portlet</name>
 	<version>2.0.0-SNAPSHOT</version>
+	<parent>
+		<groupId>com.example.plugins</groupId>
+		<artifactId>ci-parent</artifactId>
+		<version>0.0.1</version>
+		<relativePath>../ci-parent/pom.xml</relativePath>
+	</parent>
 				
 	<build>
 		<plugins>
@@ -52,62 +58,6 @@
 	</build>
 
  
-	<properties>
-		<scm.url>scm:git:https://github.com/urssandy84/ci.git</scm.url>
-	</properties>
-	
-	<scm>
-		<url>${scm.url}</url>
-		<connection>${scm.url}</connection>
-		<developerConnection>${scm.url}</developerConnection>
-	</scm>
-	
-
-<profiles>
-	<profile>
-	<id>local</id>
-	<properties>
-		<liferay.version>6.2.1</liferay.version>
-		<liferay.maven.plugin.version>6.2.1</liferay.maven.plugin.version>
-		<liferay.auto.deploy.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/deploy</liferay.auto.deploy.dir>
-		<liferay.app.server.deploy.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps</liferay.app.server.deploy.dir>
-		<liferay.app.server.lib.global.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/lib/ext</liferay.app.server.lib.global.dir>
-		<liferay.app.server.portal.dir>/Users/sandeepshinde/Projects/LiferayLab/server/liferay-portal-6.2-ce-ga2/tomcat-7.0.42/webapps/ROOT</liferay.app.server.portal.dir>
-	</properties>
-	</profile>
-
-</profiles>
-	
-	<repositories>
-	    <repository>
-	        <id>liferay-ce</id>
-	        <name>Liferay CE</name>
-	        <url>https://repository.liferay.com/nexus/content/groups/liferay-ce</url>
-	        <releases><enabled>true</enabled></releases>
-	        <snapshots><enabled>true</enabled></snapshots>
-	    </repository>
-	</repositories>
-	
-	<pluginRepositories>
-	    <pluginRepository>
-	        <id>liferay-ce</id>
-	        <url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
-	        <releases><enabled>true</enabled></releases>
-	        <snapshots><enabled>true</enabled></snapshots>
-	    </pluginRepository>
-	</pluginRepositories>
-	
-	<distributionManagement>
-	    <repository>
-	        <id>liferay-releases</id>
-	        <url>http://192.168.99.100:8081/content/repositories/releases</url>
-	    </repository>
-	    <snapshotRepository>
-	        <id>liferay-snapshots</id>
-	        <name>Liferay Snapshots Repository</name>
-	        <url>http://192.168.99.100:8081/content/repositories/snapshots</url>
-	    </snapshotRepository>
-	</distributionManagement>
 	
 	<dependencies>
 		<dependency>
